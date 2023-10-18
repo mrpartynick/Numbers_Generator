@@ -8,13 +8,17 @@
 import Foundation
 
 class SimpleNumbersInteractor: ISimpleNumbersInteractor {
-    private let calculator = SimpleNumbersCalculator()
+    private let calculator: ISimpleNumbersCalculator
     public weak var presenter: ISimpleNumbersInterOut?
     
+    init(calculator: ISimpleNumbersCalculator) {
+        self.calculator = calculator
+    }
+    
     func calculateSimpleNumber(for accountOrder: Int) {
-        calculator.calculateSimpleNumber(order: accountOrder) {[weak self] number in
+        calculator.calculate(by: accountOrder) {[weak self] result in
             guard let self = self else {return}
-            self.presenter?.handleCalculationResult(result: number, order: accountOrder)
+            self.presenter?.handleCalculationResult(result: result, order: accountOrder)
         }
     }
 }

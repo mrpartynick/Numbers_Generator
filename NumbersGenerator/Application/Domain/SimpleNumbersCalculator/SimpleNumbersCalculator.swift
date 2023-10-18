@@ -13,22 +13,6 @@ class SimpleNumbersCalculator {
     private var simpleNumbers: [Int] = []
     private var currentMaxOrder = 0
     
-    public func calculateSimpleNumber(order: Int, completion: @escaping (Int) -> ()) {
-        if order > currentMaxOrder {
-            
-            calculationQueue.async {
-                let number = self.calculate(n: order)
-                self.simpleNumbers.append(number)
-                self.currentMaxOrder += 1
-                completion(number)
-            }
-            
-        } else {
-            let number = simpleNumbers[order-1]
-            completion(number)
-        }
-    }
-    
     private func calculate(n: Int) -> Int {
         if let lastSimple = simpleNumbers.last {
             var currentNumber = lastSimple + 1
@@ -52,5 +36,23 @@ class SimpleNumbersCalculator {
         }
         
         return true
+    }
+}
+
+extension SimpleNumbersCalculator: ISimpleNumbersCalculator {
+    func calculate(by order: Int, completion: @escaping (Int) -> ()) {
+        if order > currentMaxOrder {
+            
+            calculationQueue.async {
+                let number = self.calculate(n: order)
+                self.simpleNumbers.append(number)
+                self.currentMaxOrder += 1
+                completion(number)
+            }
+            
+        } else {
+            let number = simpleNumbers[order-1]
+            completion(number)
+        }
     }
 }

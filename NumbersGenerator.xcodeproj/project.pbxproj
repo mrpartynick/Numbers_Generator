@@ -28,6 +28,7 @@
 		CF2916692AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916682AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift */; };
 		CF29166B2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */; };
 		CF29166D2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29166C2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift */; };
+		CFAF66142AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66132AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		CF2916682AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersAssembly.swift; sourceTree = "<group>"; };
 		CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersCalculator.swift; sourceTree = "<group>"; };
 		CF29166C2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersInterOut.swift; sourceTree = "<group>"; };
+		CFAF66132AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +139,7 @@
 		CF2916442AE0322800DB2CB4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */,
+				CFAF66122AE06CC40061DE1A /* SimpleNumbersCalculator */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -222,6 +224,15 @@
 				CF2916602AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CFAF66122AE06CC40061DE1A /* SimpleNumbersCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF66132AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift */,
+				CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */,
+			);
+			path = SimpleNumbersCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				CF29164F2AE038DA00DB2CB4 /* NumberCell.swift in Sources */,
 				CF2916652AE04AB500DB2CB4 /* ISimpleNumbersView.swift in Sources */,
 				CF29166D2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift in Sources */,
+				CFAF66142AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift in Sources */,
 				CF2916512AE03A6D00DB2CB4 /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

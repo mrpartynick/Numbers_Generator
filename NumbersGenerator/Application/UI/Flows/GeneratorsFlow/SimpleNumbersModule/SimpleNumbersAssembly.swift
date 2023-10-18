@@ -10,7 +10,8 @@ import UIKit
 
 class SimpleNumbersAssembly {
     public static func buildModule() -> UIViewController {
-        let interactor = SimpleNumbersInteractor()
+        let calculator = SimpleNumbersCalculator()
+        let interactor = SimpleNumbersInteractor(calculator: calculator)
         let presenter = SimpleNumbersPresenter(interactor: interactor)
         let view = SimpleNumbersView(presenter: presenter)
         interactor.presenter = presenter
