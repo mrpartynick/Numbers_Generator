@@ -15,6 +15,11 @@ class NumberCell: StatableCell {
             state = .Showing
         }
     }
+    public var overflowFlag = false {
+        didSet {
+            numberLabel.text = "Overflow"
+        }
+    }
     
     private let numberLabel: UILabel = {
         let l = UILabel()

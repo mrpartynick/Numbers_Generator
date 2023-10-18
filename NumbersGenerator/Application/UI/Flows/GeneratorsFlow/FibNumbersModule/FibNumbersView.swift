@@ -37,5 +37,10 @@ extension FibNumbersView: IFibNumbersView {
         guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
         cell.showedNumber = number
     }
+    
+    func showOverflow(for indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
+        cell.overflowFlag = true
+    }
 }
 

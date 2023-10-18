@@ -25,8 +25,14 @@ extension FibNumbersPresenter: IFibNumbersViewOut {
 
 extension FibNumbersPresenter: IFibNumbersInterOut {
     func handleCalculationResult(result: Int, order: Int) {
+        let indexPath = IndexPath(row: order, section: 0)
         DispatchQueue.main.async {
-            self.view?.showFibNumber(number: result, for: IndexPath(row: order, section: 0))
+            if result == 0 {
+                self.view?.showOverflow(for: indexPath)
+            } else {
+                self.view?.showFibNumber(number: result, for: indexPath)
+            }
+
         }
     }
 }

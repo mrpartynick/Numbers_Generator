@@ -9,4 +9,5 @@ import Foundation
 
 protocol IFibNumbersView: AnyObject {
     func showFibNumber(number: Int, for indexPath: IndexPath)
+    func showOverflow(for indexPath: IndexPath)
 }
