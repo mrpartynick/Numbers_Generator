@@ -18,13 +18,15 @@ class FibNumbersPresenter {
 
 extension FibNumbersPresenter: IFibNumbersViewOut {
     func cellDidLoad(for indexPath: IndexPath) {
-        
+        interactor.calculateFibNumber(for: indexPath.row)
     }
     
 }
 
 extension FibNumbersPresenter: IFibNumbersInterOut {
     func handleCalculationResult(result: Int, order: Int) {
-        
+        DispatchQueue.main.async {
+            self.view?.showFibNumber(number: result, for: IndexPath(row: order, section: 0))
+        }
     }
 }

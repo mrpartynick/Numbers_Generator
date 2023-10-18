@@ -9,7 +9,8 @@ import UIKit
 
 class FibNumbersAssembly {
     public static func buildModule() -> UIViewController {
-        let interactor = FibNumbersInteractor()
+        let calculator = FibNumbersCalculator()
+        let interactor = FibNumbersInteractor(calculator: calculator)
         let presenter = FibNumbersPresenter(interactor: interactor)
         interactor.presenter = presenter
         let view = FibNumbersView(presenter: presenter)

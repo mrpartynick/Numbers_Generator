@@ -13,6 +13,7 @@ class SimpleNumbersView: BaseNumbersController {
     init(presenter: ISimpleNumbersViewOut) {
         self.presenter = presenter
         super.init()
+        title = "Простые числа"
     }
     
     required init?(coder: NSCoder) {
