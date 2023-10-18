@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CF29162D2AE030E400DB2CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29162C2AE030E400DB2CB4 /* AppDelegate.swift */; };
 		CF29162F2AE030E400DB2CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29162E2AE030E400DB2CB4 /* SceneDelegate.swift */; };
-		CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916302AE030E400DB2CB4 /* ViewController.swift */; };
 		CF2916362AE030E500DB2CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2916352AE030E500DB2CB4 /* Assets.xcassets */; };
 		CF2916392AE030E500DB2CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2916372AE030E500DB2CB4 /* LaunchScreen.storyboard */; };
 		CF29164C2AE035FC00DB2CB4 /* BaseNumbersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29164B2AE035FC00DB2CB4 /* BaseNumbersController.swift */; };
@@ -44,7 +43,6 @@
 		CF2916292AE030E400DB2CB4 /* NumbersGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumbersGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF29162C2AE030E400DB2CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF29162E2AE030E400DB2CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF2916302AE030E400DB2CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF2916352AE030E500DB2CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2916382AE030E500DB2CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF29163A2AE030E500DB2CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				CF2916402AE0318F00DB2CB4 /* Configuration */,
 				CF2916412AE031AC00DB2CB4 /* Resources */,
 				CF2916422AE0321200DB2CB4 /* Application */,
-				CF2916302AE030E400DB2CB4 /* ViewController.swift */,
 			);
 			path = NumbersGenerator;
 			sourceTree = "<group>";
@@ -349,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2916612AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift in Sources */,
-				CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */,
 				CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */,
 				CFAF66172AE0703C0061DE1A /* IFibNumbersView.swift in Sources */,
 				CF2916632AE04A2A00DB2CB4 /* ISimpleNumbersViewOut.swift in Sources */,

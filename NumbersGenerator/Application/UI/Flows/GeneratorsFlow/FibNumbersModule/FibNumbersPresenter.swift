@@ -20,7 +20,7 @@ extension FibNumbersPresenter: IFibNumbersViewOut {
     func cellDidLoad(for indexPath: IndexPath) {
         interactor.calculateFibNumber(for: indexPath.row)
     }
-    
+
 }
 
 extension FibNumbersPresenter: IFibNumbersInterOut {
