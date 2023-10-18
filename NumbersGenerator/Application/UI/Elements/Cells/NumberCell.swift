@@ -41,6 +41,8 @@ class NumberCell: StatableCell {
         numberLabel.translatesAutoresizingMaskIntoConstraints = false
         numberLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         numberLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        numberLabel.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor).isActive = true
+        numberLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor).isActive = true
     }
     
     public func configureBackground(for indexPath: IndexPath) {

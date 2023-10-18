@@ -25,6 +25,11 @@ class FibNumbersView: BaseNumbersController {
         let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
         return cell
     }
+    
+    override func configureTabBar() {
+        title = Strings.Titles.fibNumbers
+        tabBarItem.image = UIImage(systemName: Strings.Images.sum)
+    }
 }
 
 extension FibNumbersView: IFibNumbersView {

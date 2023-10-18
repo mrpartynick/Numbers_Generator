@@ -14,6 +14,7 @@ class BaseNumbersController: UICollectionViewController {
         super.init(collectionViewLayout: UICollectionViewLayout())
         collectionView.collectionViewLayout = createLayout()
         collectionView.register(NumberCell.self, forCellWithReuseIdentifier: NumberCell.id)
+        configureTabBar()
     }
     
     required init?(coder: NSCoder) {
@@ -40,6 +41,10 @@ class BaseNumbersController: UICollectionViewController {
 
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
+    }
+    
+    internal func configureTabBar() {
+        
     }
 }
 

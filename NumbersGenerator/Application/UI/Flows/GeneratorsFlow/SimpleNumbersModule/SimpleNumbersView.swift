@@ -13,7 +13,6 @@ class SimpleNumbersView: BaseNumbersController {
     init(presenter: ISimpleNumbersViewOut) {
         self.presenter = presenter
         super.init()
-        title = "Простые числа"
     }
     
     required init?(coder: NSCoder) {
@@ -24,6 +23,11 @@ class SimpleNumbersView: BaseNumbersController {
         presenter.cellDidLoad(for: indexPath)
         let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
         return cell
+    }
+    
+    override func configureTabBar() {
+        title = Strings.Titles.simpleNumbers
+        tabBarItem.image = UIImage(systemName: Strings.Images.plusMinus)
     }
 }
 
