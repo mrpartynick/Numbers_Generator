@@ -15,8 +15,8 @@ class FibNumbersCalculator {
     private func calculate(n: Int) -> Int {
         let parent = fibNumbers[n-1]
         let grandParent = fibNumbers[n-2]
-        let children = grandParent + parent
-        return children
+        let result = grandParent &+ parent
+        return result
     }
 }
 
