@@ -24,6 +24,7 @@ class NumberCell: StatableCell {
     private let numberLabel: UILabel = {
         let l = UILabel()
         l.font = l.font.withSize(30)
+        l.numberOfLines = 0
         return l
     }()
     
