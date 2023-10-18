@@ -8,9 +8,11 @@
 import UIKit
 
 class SimpleNumbersView: BaseNumbersController {
-    override init() {
+    private let presenter: ISimpleNumbersPresenter
+    
+    init(presenter: ISimpleNumbersPresenter) {
+        self.presenter = presenter
         super.init()
-        title = Strings.Titles.simpleNumbers
     }
     
     required init?(coder: NSCoder) {

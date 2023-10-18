@@ -20,6 +20,12 @@
 		CF2916582AE044D600DB2CB4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916572AE044D600DB2CB4 /* Colors.swift */; };
 		CF29165A2AE047E700DB2CB4 /* FibNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */; };
 		CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29165B2AE0488000DB2CB4 /* Strings.swift */; };
+		CF29165E2AE049B700DB2CB4 /* SimpleNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29165D2AE049B700DB2CB4 /* SimpleNumbersInteractor.swift */; };
+		CF2916612AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916602AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift */; };
+		CF2916632AE04A2A00DB2CB4 /* ISimpleNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916622AE04A2A00DB2CB4 /* ISimpleNumbersPresenter.swift */; };
+		CF2916652AE04AB500DB2CB4 /* ISimpleNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916642AE04AB500DB2CB4 /* ISimpleNumbersView.swift */; };
+		CF2916672AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916662AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift */; };
+		CF2916692AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916682AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		CF2916572AE044D600DB2CB4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersView.swift; sourceTree = "<group>"; };
 		CF29165B2AE0488000DB2CB4 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CF29165D2AE049B700DB2CB4 /* SimpleNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersInteractor.swift; sourceTree = "<group>"; };
+		CF2916602AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersInteractor.swift; sourceTree = "<group>"; };
+		CF2916622AE04A2A00DB2CB4 /* ISimpleNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersPresenter.swift; sourceTree = "<group>"; };
+		CF2916642AE04AB500DB2CB4 /* ISimpleNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersView.swift; sourceTree = "<group>"; };
+		CF2916662AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersPresenter.swift; sourceTree = "<group>"; };
+		CF2916682AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +166,11 @@
 		CF2916482AE0325D00DB2CB4 /* SimpleNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
+				CF29165F2AE049CD00DB2CB4 /* Protocols */,
 				CF2916542AE03D7300DB2CB4 /* SimpleNumbersView.swift */,
+				CF2916662AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift */,
+				CF29165D2AE049B700DB2CB4 /* SimpleNumbersInteractor.swift */,
+				CF2916682AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift */,
 			);
 			path = SimpleNumbersModule;
 			sourceTree = "<group>";
@@ -190,6 +206,16 @@
 				CF2916502AE03A6D00DB2CB4 /* UIState.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		CF29165F2AE049CD00DB2CB4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CF2916602AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift */,
+				CF2916622AE04A2A00DB2CB4 /* ISimpleNumbersPresenter.swift */,
+				CF2916642AE04AB500DB2CB4 /* ISimpleNumbersView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,16 +288,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2916612AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift in Sources */,
 				CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */,
 				CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */,
+				CF2916632AE04A2A00DB2CB4 /* ISimpleNumbersPresenter.swift in Sources */,
 				CF2916582AE044D600DB2CB4 /* Colors.swift in Sources */,
+				CF2916672AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift in Sources */,
 				CF29164C2AE035FC00DB2CB4 /* BaseNumbersController.swift in Sources */,
 				CF2916532AE03AD100DB2CB4 /* StatableCell.swift in Sources */,
+				CF29165E2AE049B700DB2CB4 /* SimpleNumbersInteractor.swift in Sources */,
 				CF2916552AE03D7300DB2CB4 /* SimpleNumbersView.swift in Sources */,
 				CF29165A2AE047E700DB2CB4 /* FibNumbersView.swift in Sources */,
+				CF2916692AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift in Sources */,
 				CF29162D2AE030E400DB2CB4 /* AppDelegate.swift in Sources */,
 				CF29162F2AE030E400DB2CB4 /* SceneDelegate.swift in Sources */,
 				CF29164F2AE038DA00DB2CB4 /* NumberCell.swift in Sources */,
+				CF2916652AE04AB500DB2CB4 /* ISimpleNumbersView.swift in Sources */,
 				CF2916512AE03A6D00DB2CB4 /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
