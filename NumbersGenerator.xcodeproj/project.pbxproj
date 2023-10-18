@@ -12,6 +12,14 @@
 		CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916302AE030E400DB2CB4 /* ViewController.swift */; };
 		CF2916362AE030E500DB2CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2916352AE030E500DB2CB4 /* Assets.xcassets */; };
 		CF2916392AE030E500DB2CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2916372AE030E500DB2CB4 /* LaunchScreen.storyboard */; };
+		CF29164C2AE035FC00DB2CB4 /* BaseNumbersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29164B2AE035FC00DB2CB4 /* BaseNumbersController.swift */; };
+		CF29164F2AE038DA00DB2CB4 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29164E2AE038DA00DB2CB4 /* NumberCell.swift */; };
+		CF2916512AE03A6D00DB2CB4 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916502AE03A6D00DB2CB4 /* UIState.swift */; };
+		CF2916532AE03AD100DB2CB4 /* StatableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916522AE03AD100DB2CB4 /* StatableCell.swift */; };
+		CF2916552AE03D7300DB2CB4 /* SimpleNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916542AE03D7300DB2CB4 /* SimpleNumbersView.swift */; };
+		CF2916582AE044D600DB2CB4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916572AE044D600DB2CB4 /* Colors.swift */; };
+		CF29165A2AE047E700DB2CB4 /* FibNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */; };
+		CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29165B2AE0488000DB2CB4 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		CF2916352AE030E500DB2CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2916382AE030E500DB2CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF29163A2AE030E500DB2CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF29164B2AE035FC00DB2CB4 /* BaseNumbersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNumbersController.swift; sourceTree = "<group>"; };
+		CF29164E2AE038DA00DB2CB4 /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		CF2916502AE03A6D00DB2CB4 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		CF2916522AE03AD100DB2CB4 /* StatableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatableCell.swift; sourceTree = "<group>"; };
+		CF2916542AE03D7300DB2CB4 /* SimpleNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersView.swift; sourceTree = "<group>"; };
+		CF2916572AE044D600DB2CB4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersView.swift; sourceTree = "<group>"; };
+		CF29165B2AE0488000DB2CB4 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 		CF29162B2AE030E400DB2CB4 /* NumbersGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				CF2916562AE03D9700DB2CB4 /* Library */,
 				CF2916402AE0318F00DB2CB4 /* Configuration */,
 				CF2916412AE031AC00DB2CB4 /* Resources */,
 				CF2916422AE0321200DB2CB4 /* Application */,
@@ -77,6 +94,8 @@
 			children = (
 				CF2916372AE030E500DB2CB4 /* LaunchScreen.storyboard */,
 				CF2916352AE030E500DB2CB4 /* Assets.xcassets */,
+				CF2916572AE044D600DB2CB4 /* Colors.swift */,
+				CF29165B2AE0488000DB2CB4 /* Strings.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -109,6 +128,8 @@
 		CF2916452AE0323800DB2CB4 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				CF29164D2AE038CB00DB2CB4 /* Cells */,
+				CF29164A2AE035EA00DB2CB4 /* Controllers */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -133,6 +154,7 @@
 		CF2916482AE0325D00DB2CB4 /* SimpleNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
+				CF2916542AE03D7300DB2CB4 /* SimpleNumbersView.swift */,
 			);
 			path = SimpleNumbersModule;
 			sourceTree = "<group>";
@@ -140,8 +162,34 @@
 		CF2916492AE0326800DB2CB4 /* FibNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
+				CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */,
 			);
 			path = FibNumbersModule;
+			sourceTree = "<group>";
+		};
+		CF29164A2AE035EA00DB2CB4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF29164B2AE035FC00DB2CB4 /* BaseNumbersController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF29164D2AE038CB00DB2CB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF2916522AE03AD100DB2CB4 /* StatableCell.swift */,
+				CF29164E2AE038DA00DB2CB4 /* NumberCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF2916562AE03D9700DB2CB4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CF2916502AE03A6D00DB2CB4 /* UIState.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */,
+				CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */,
+				CF2916582AE044D600DB2CB4 /* Colors.swift in Sources */,
+				CF29164C2AE035FC00DB2CB4 /* BaseNumbersController.swift in Sources */,
+				CF2916532AE03AD100DB2CB4 /* StatableCell.swift in Sources */,
+				CF2916552AE03D7300DB2CB4 /* SimpleNumbersView.swift in Sources */,
+				CF29165A2AE047E700DB2CB4 /* FibNumbersView.swift in Sources */,
 				CF29162D2AE030E400DB2CB4 /* AppDelegate.swift in Sources */,
 				CF29162F2AE030E400DB2CB4 /* SceneDelegate.swift in Sources */,
+				CF29164F2AE038DA00DB2CB4 /* NumberCell.swift in Sources */,
+				CF2916512AE03A6D00DB2CB4 /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -338,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

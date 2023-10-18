@@ -13,11 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [SimpleNumbersView(), FibNumbersView()]
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.frame = windowScene.coordinateSpace.bounds
-        let rootVC = ViewController()
-        window?.rootViewController = rootVC
+        let rootVC = SimpleNumbersView()
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
     }
 
