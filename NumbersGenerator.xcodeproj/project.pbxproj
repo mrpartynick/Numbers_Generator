@@ -29,6 +29,15 @@
 		CF29166B2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */; };
 		CF29166D2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29166C2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift */; };
 		CFAF66142AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66132AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift */; };
+		CFAF66172AE0703C0061DE1A /* IFibNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66162AE0703C0061DE1A /* IFibNumbersView.swift */; };
+		CFAF66192AE070920061DE1A /* IFibNumbersViewOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66182AE070920061DE1A /* IFibNumbersViewOut.swift */; };
+		CFAF661B2AE070C80061DE1A /* IFibNumbersInterOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF661A2AE070C80061DE1A /* IFibNumbersInterOut.swift */; };
+		CFAF661D2AE070F40061DE1A /* IFibNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF661C2AE070F40061DE1A /* IFibNumbersInteractor.swift */; };
+		CFAF661F2AE0713B0061DE1A /* FibNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF661E2AE0713B0061DE1A /* FibNumbersPresenter.swift */; };
+		CFAF66212AE071840061DE1A /* FibNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66202AE071840061DE1A /* FibNumbersInteractor.swift */; };
+		CFAF66232AE0723F0061DE1A /* FibNumbersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66222AE0723F0061DE1A /* FibNumbersAssembly.swift */; };
+		CFAF66262AE072B60061DE1A /* IFibNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66252AE072B60061DE1A /* IFibNumbersCalculator.swift */; };
+		CFAF66282AE072EE0061DE1A /* FibNumbersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF66272AE072EE0061DE1A /* FibNumbersCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +65,15 @@
 		CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumbersCalculator.swift; sourceTree = "<group>"; };
 		CF29166C2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersInterOut.swift; sourceTree = "<group>"; };
 		CFAF66132AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISimpleNumbersCalculator.swift; sourceTree = "<group>"; };
+		CFAF66162AE0703C0061DE1A /* IFibNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFibNumbersView.swift; sourceTree = "<group>"; };
+		CFAF66182AE070920061DE1A /* IFibNumbersViewOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFibNumbersViewOut.swift; sourceTree = "<group>"; };
+		CFAF661A2AE070C80061DE1A /* IFibNumbersInterOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFibNumbersInterOut.swift; sourceTree = "<group>"; };
+		CFAF661C2AE070F40061DE1A /* IFibNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFibNumbersInteractor.swift; sourceTree = "<group>"; };
+		CFAF661E2AE0713B0061DE1A /* FibNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersPresenter.swift; sourceTree = "<group>"; };
+		CFAF66202AE071840061DE1A /* FibNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersInteractor.swift; sourceTree = "<group>"; };
+		CFAF66222AE0723F0061DE1A /* FibNumbersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersAssembly.swift; sourceTree = "<group>"; };
+		CFAF66252AE072B60061DE1A /* IFibNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFibNumbersCalculator.swift; sourceTree = "<group>"; };
+		CFAF66272AE072EE0061DE1A /* FibNumbersCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibNumbersCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +157,7 @@
 		CF2916442AE0322800DB2CB4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CFAF66242AE072A60061DE1A /* FibNumbersCalculator */,
 				CFAF66122AE06CC40061DE1A /* SimpleNumbersCalculator */,
 			);
 			path = Domain;
@@ -185,7 +204,11 @@
 		CF2916492AE0326800DB2CB4 /* FibNumbersModule */ = {
 			isa = PBXGroup;
 			children = (
+				CFAF66152AE070280061DE1A /* Protocols */,
 				CF2916592AE047E700DB2CB4 /* FibNumbersView.swift */,
+				CFAF661E2AE0713B0061DE1A /* FibNumbersPresenter.swift */,
+				CFAF66202AE071840061DE1A /* FibNumbersInteractor.swift */,
+				CFAF66222AE0723F0061DE1A /* FibNumbersAssembly.swift */,
 			);
 			path = FibNumbersModule;
 			sourceTree = "<group>";
@@ -233,6 +256,26 @@
 				CF29166A2AE0554500DB2CB4 /* SimpleNumbersCalculator.swift */,
 			);
 			path = SimpleNumbersCalculator;
+			sourceTree = "<group>";
+		};
+		CFAF66152AE070280061DE1A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF66162AE0703C0061DE1A /* IFibNumbersView.swift */,
+				CFAF66182AE070920061DE1A /* IFibNumbersViewOut.swift */,
+				CFAF661A2AE070C80061DE1A /* IFibNumbersInterOut.swift */,
+				CFAF661C2AE070F40061DE1A /* IFibNumbersInteractor.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CFAF66242AE072A60061DE1A /* FibNumbersCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF66252AE072B60061DE1A /* IFibNumbersCalculator.swift */,
+				CFAF66272AE072EE0061DE1A /* FibNumbersCalculator.swift */,
+			);
+			path = FibNumbersCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +351,7 @@
 				CF2916612AE049E000DB2CB4 /* ISimpleNumbersInteractor.swift in Sources */,
 				CF2916312AE030E400DB2CB4 /* ViewController.swift in Sources */,
 				CF29165C2AE0488000DB2CB4 /* Strings.swift in Sources */,
+				CFAF66172AE0703C0061DE1A /* IFibNumbersView.swift in Sources */,
 				CF2916632AE04A2A00DB2CB4 /* ISimpleNumbersViewOut.swift in Sources */,
 				CF2916582AE044D600DB2CB4 /* Colors.swift in Sources */,
 				CF2916672AE04AE300DB2CB4 /* SimpleNumbersPresenter.swift in Sources */,
@@ -320,11 +364,19 @@
 				CF2916692AE04B8600DB2CB4 /* SimpleNumbersAssembly.swift in Sources */,
 				CF29162D2AE030E400DB2CB4 /* AppDelegate.swift in Sources */,
 				CF29162F2AE030E400DB2CB4 /* SceneDelegate.swift in Sources */,
+				CFAF661B2AE070C80061DE1A /* IFibNumbersInterOut.swift in Sources */,
 				CF29164F2AE038DA00DB2CB4 /* NumberCell.swift in Sources */,
 				CF2916652AE04AB500DB2CB4 /* ISimpleNumbersView.swift in Sources */,
+				CFAF66212AE071840061DE1A /* FibNumbersInteractor.swift in Sources */,
+				CFAF66192AE070920061DE1A /* IFibNumbersViewOut.swift in Sources */,
+				CFAF66232AE0723F0061DE1A /* FibNumbersAssembly.swift in Sources */,
+				CFAF66282AE072EE0061DE1A /* FibNumbersCalculator.swift in Sources */,
+				CFAF66262AE072B60061DE1A /* IFibNumbersCalculator.swift in Sources */,
 				CF29166D2AE05A5F00DB2CB4 /* ISimpleNumbersInterOut.swift in Sources */,
 				CFAF66142AE06CDA0061DE1A /* ISimpleNumbersCalculator.swift in Sources */,
 				CF2916512AE03A6D00DB2CB4 /* UIState.swift in Sources */,
+				CFAF661F2AE0713B0061DE1A /* FibNumbersPresenter.swift in Sources */,
+				CFAF661D2AE070F40061DE1A /* IFibNumbersInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
