@@ -9,4 +9,5 @@ import Foundation
 
 protocol ISimpleNumbersInteractor: AnyObject {
     func calculateSimpleNumber(for accountOrder: Int)
+    
 }

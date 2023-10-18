@@ -58,7 +58,6 @@ extension BaseNumbersController {
         cell.showedNumber = indexPath.row
         cell.backgroundColor = .blue
         cell.configureBackground(for: indexPath)
-        print(indexPath.row)
         return cell
     }
 }

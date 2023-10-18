@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ISimpleNumbersPresenter: AnyObject {
+protocol ISimpleNumbersViewOut: AnyObject {
     func cellDidLoad(for indexPath: IndexPath)
 }

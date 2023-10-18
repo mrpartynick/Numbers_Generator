@@ -13,7 +13,8 @@ class SimpleNumbersAssembly {
         let interactor = SimpleNumbersInteractor()
         let presenter = SimpleNumbersPresenter(interactor: interactor)
         let view = SimpleNumbersView(presenter: presenter)
-        
+        interactor.presenter = presenter
+        presenter.view = view
         return view
     }
 }
