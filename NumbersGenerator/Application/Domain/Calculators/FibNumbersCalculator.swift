@@ -27,8 +27,8 @@ class FibNumbersCalculator {
     }
 }
 
-extension FibNumbersCalculator: IFibNumbersCalculator {
-    func calculateByOrder(order: Int, completion: @escaping (Int) -> ()) {
+extension FibNumbersCalculator: ICalculator {
+    func calculate(by order: Int, completion: @escaping (Int) -> ()) {
         if order >= currentMaxOrder {
             calculationQueue.async {
                 let number = self.calculate(n: order)

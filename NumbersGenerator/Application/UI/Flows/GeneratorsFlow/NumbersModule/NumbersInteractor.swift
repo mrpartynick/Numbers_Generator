@@ -7,11 +7,11 @@
 
 import Foundation
 
-class SimpleNumbersInteractor: ISimpleNumbersInteractor {
-    private let calculator: ISimpleNumbersCalculator
+class NumbersInteractor: ISimpleNumbersInteractor {
+    private let calculator: ICalculator
     public weak var presenter: ISimpleNumbersInterOut?
     
-    init(calculator: ISimpleNumbersCalculator) {
+    init(calculator: ICalculator) {
         self.calculator = calculator
     }
     

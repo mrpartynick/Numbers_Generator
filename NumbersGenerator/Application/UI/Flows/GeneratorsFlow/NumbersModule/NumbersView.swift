@@ -1,5 +1,5 @@
 //
-//  FibNumbersView.swift
+//  SimpleNumbersView.swift
 //  NumbersGenerator
 //
 //  Created by Николай Циминтия on 18.10.2023.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class FibNumbersView: BaseNumbersController {
-    private let presenter: IFibNumbersViewOut
+class NumbersView: BaseNumbersController {
+    private let presenter: ISimpleNumbersViewOut
     
-    init(presenter: IFibNumbersViewOut) {
+    init(presenter: ISimpleNumbersViewOut) {
         self.presenter = presenter
         super.init()
-        title = "Числа Фибоначчи"
     }
     
     required init?(coder: NSCoder) {
@@ -27,20 +26,15 @@ class FibNumbersView: BaseNumbersController {
     }
     
     override func configureTabBar() {
-        title = Strings.Titles.fibNumbers
-        tabBarItem.image = UIImage(systemName: Strings.Images.sum)
+        title = Strings.Titles.simpleNumbers
+        tabBarItem.image = UIImage(systemName: Strings.Images.plusMinus)
     }
 }
 
-extension FibNumbersView: IFibNumbersView {
-    func showFibNumber(number: Int, for indexPath: IndexPath) {
+extension NumbersView: ISimpleNumbersView {
+    func showSimpleNumber(number: Int, for indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
         cell.showedNumber = number
-    }
-    
-    func showOverflow(for indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
-        cell.overflowFlag = true
     }
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SimpleNumbersPresenter: ISimpleNumbersViewOut, ISimpleNumbersInterOut {
+class NumbersPresenter: ISimpleNumbersViewOut, ISimpleNumbersInterOut {
     private let interactor: ISimpleNumbersInteractor
     public weak var view: ISimpleNumbersView?
     
