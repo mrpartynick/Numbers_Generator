@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ISimpleNumbersInterOut: AnyObject {
+protocol INumbersInterOut: AnyObject {
     func handleCalculationResult(result: Int, order: Int)
 }

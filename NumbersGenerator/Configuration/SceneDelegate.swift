@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBar = UITabBarController()
         let modulesFabric = NumbersAssembly.self
-        tabBar.viewControllers = [modulesFabric.buildModule(), modulesFabric.getFibModule()]
+        tabBar.viewControllers = [modulesFabric.getSimpleModule(), modulesFabric.getFibModule()]
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)

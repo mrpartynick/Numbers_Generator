@@ -9,7 +9,7 @@ import UIKit
 
 
 class NumbersAssembly {
-    public static func buildModule() -> UIViewController {
+    public static func getSimpleModule() -> UIViewController {
         let calculator = SimpleNumbersCalculator()
         let interactor = NumbersInteractor(calculator: calculator)
         let presenter = NumbersPresenter(interactor: interactor)

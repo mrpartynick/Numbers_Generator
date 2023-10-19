@@ -7,16 +7,16 @@
 
 import Foundation
 
-class NumbersPresenter: ISimpleNumbersViewOut, ISimpleNumbersInterOut {
-    private let interactor: ISimpleNumbersInteractor
-    public weak var view: ISimpleNumbersView?
+class NumbersPresenter: INumbersViewOut, INumbersInterOut {
+    private let interactor: INumbersInteractor
+    public weak var view: INumbersView?
     
-    init(interactor: ISimpleNumbersInteractor) {
+    init(interactor: INumbersInteractor) {
         self.interactor = interactor
     }
     
     func cellDidLoad(for indexPath: IndexPath) {
-        interactor.calculateSimpleNumber(for: indexPath.row + 1)
+        interactor.calculateNumber(for: indexPath.row + 1)
     }
     
     func handleCalculationResult(result: Int, order: Int) {

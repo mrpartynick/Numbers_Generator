@@ -8,9 +8,9 @@
 import UIKit
 
 class NumbersView: BaseNumbersController {
-    private let presenter: ISimpleNumbersViewOut
+    private let presenter: INumbersViewOut
     
-    init(presenter: ISimpleNumbersViewOut) {
+    init(presenter: INumbersViewOut) {
         self.presenter = presenter
         super.init()
     }
@@ -31,7 +31,7 @@ class NumbersView: BaseNumbersController {
     }
 }
 
-extension NumbersView: ISimpleNumbersView {
+extension NumbersView: INumbersView {
     func showSimpleNumber(number: Int, for indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
         cell.showedNumber = number

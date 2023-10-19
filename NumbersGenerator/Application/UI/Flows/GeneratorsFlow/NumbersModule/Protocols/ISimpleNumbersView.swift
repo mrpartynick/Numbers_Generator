@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ISimpleNumbersView: AnyObject {
+protocol INumbersView: AnyObject {
     func showSimpleNumber(number: Int, for indexPath: IndexPath)
 }
