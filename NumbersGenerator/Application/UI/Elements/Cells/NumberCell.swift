@@ -34,7 +34,6 @@ class NumberCell: StatableCell {
         super.init(frame: frame)
         setupHierarchy()
         setConstraints()
-        loadingDidBegin()
     }
     
     required init?(coder: NSCoder) {
