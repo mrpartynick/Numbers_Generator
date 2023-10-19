@@ -8,5 +8,5 @@
 import Foundation
 
 protocol INumbersView: AnyObject {
-    func showSimpleNumber(number: Int, for indexPath: IndexPath)
+    func showSimpleNumber(number: Int, for indexPath: IndexPath, overflow: Bool)
 }

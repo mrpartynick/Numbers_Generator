@@ -22,7 +22,7 @@ class NumbersPresenter: INumbersViewOut, INumbersInterOut {
     func handleCalculationResult(result: Int, order: Int) {
         let indexPath = IndexPath(row: order-1, section: 0)
         DispatchQueue.main.async {
-            self.view?.showSimpleNumber(number: result, for: indexPath)
+            self.view?.showSimpleNumber(number: result, for: indexPath, overflow: (result==0))
         }
     }
 }

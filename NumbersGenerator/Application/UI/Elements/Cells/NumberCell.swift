@@ -18,6 +18,7 @@ class NumberCell: StatableCell {
     public var overflowFlag = false {
         didSet {
             numberLabel.text = "Overflow"
+            loadingDidEnd()
         }
     }
     

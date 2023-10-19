@@ -32,9 +32,13 @@ class NumbersView: BaseNumbersController {
 }
 
 extension NumbersView: INumbersView {
-    func showSimpleNumber(number: Int, for indexPath: IndexPath) {
+    func showSimpleNumber(number: Int, for indexPath: IndexPath, overflow: Bool) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? NumberCell else {return}
-        cell.showedNumber = number
+        if overflow {
+            cell.overflowFlag = overflow
+        } else {
+            cell.showedNumber = number
+        }
     }
 }
 
