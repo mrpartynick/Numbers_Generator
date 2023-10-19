@@ -16,7 +16,7 @@ class NumbersPresenter: INumbersViewOut, INumbersInterOut {
     }
     
     func cellDidLoad(for indexPath: IndexPath) {
-        interactor.calculateNumber(for: indexPath.row + 1)
+        interactor.calculateNumber(for: indexPath.row + 1 )
     }
     
     func handleCalculationResult(result: Int, order: Int) {

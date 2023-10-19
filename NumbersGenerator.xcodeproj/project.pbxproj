@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF193F982AE162730051D421 /* TabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF193F972AE162730051D421 /* TabBarConfig.swift */; };
 		CF29162D2AE030E400DB2CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29162C2AE030E400DB2CB4 /* AppDelegate.swift */; };
 		CF29162F2AE030E400DB2CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29162E2AE030E400DB2CB4 /* SceneDelegate.swift */; };
 		CF2916362AE030E500DB2CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2916352AE030E500DB2CB4 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF193F972AE162730051D421 /* TabBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfig.swift; sourceTree = "<group>"; };
 		CF2916292AE030E400DB2CB4 /* NumbersGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumbersGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF29162C2AE030E400DB2CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF29162E2AE030E400DB2CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2916502AE03A6D00DB2CB4 /* UIState.swift */,
+				CF193F972AE162730051D421 /* TabBarConfig.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				CF2916672AE04AE300DB2CB4 /* NumbersPresenter.swift in Sources */,
 				CF29164C2AE035FC00DB2CB4 /* BaseNumbersController.swift in Sources */,
 				CF2916532AE03AD100DB2CB4 /* StatableCell.swift in Sources */,
+				CF193F982AE162730051D421 /* TabBarConfig.swift in Sources */,
 				CF68D8682AE15E950045731A /* ICalculator.swift in Sources */,
 				CF29165E2AE049B700DB2CB4 /* NumbersInteractor.swift in Sources */,
 				CF2916552AE03D7300DB2CB4 /* NumbersView.swift in Sources */,

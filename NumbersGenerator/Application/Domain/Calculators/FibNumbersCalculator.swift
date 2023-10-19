@@ -28,16 +28,17 @@ class FibNumbersCalculator {
 }
 
 extension FibNumbersCalculator: ICalculator {
-    func calculate(by order: Int, completion: @escaping (Int) -> ()) {
-        if order >= currentMaxOrder {
+    public func calculate(by order: Int, completion: @escaping (Int) -> ()) {
+        let trueOrder = order-1
+        if trueOrder >= currentMaxOrder{
             calculationQueue.async {
-                let number = self.calculate(n: order)
+                let number = self.calculate(n: trueOrder)
                 self.fibNumbers.append(number)
                 self.currentMaxOrder += 1
                 completion(number)
             }
         } else {
-            let number = fibNumbers[order]
+            let number = fibNumbers[trueOrder]
             completion(number)
         }
     }

@@ -13,7 +13,7 @@ class NumbersAssembly {
         let calculator = SimpleNumbersCalculator()
         let interactor = NumbersInteractor(calculator: calculator)
         let presenter = NumbersPresenter(interactor: interactor)
-        let view = NumbersView(presenter: presenter)
+        let view = NumbersView(presenter: presenter, configuration: .SimpleNumbers)
         interactor.presenter = presenter
         presenter.view = view
         return view
@@ -23,7 +23,7 @@ class NumbersAssembly {
         let calculator = FibNumbersCalculator()
         let interactor = NumbersInteractor(calculator: calculator)
         let presenter = NumbersPresenter(interactor: interactor)
-        let view = NumbersView(presenter: presenter)
+        let view = NumbersView(presenter: presenter, configuration: .FibNumbers)
         interactor.presenter = presenter
         presenter.view = view
         return view
