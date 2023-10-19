@@ -27,7 +27,6 @@ class NumberCell: StatableCell {
         l.numberOfLines = 0
         return l
     }()
-    
     private let spinner = UIActivityIndicatorView()
     
     override init(frame: CGRect) {
@@ -51,7 +50,10 @@ class NumberCell: StatableCell {
         numberLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         numberLabel.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor).isActive = true
         numberLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor).isActive = true
-        
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         spinner.frame = contentView.frame
     }
     

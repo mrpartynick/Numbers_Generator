@@ -14,7 +14,6 @@ class SimpleNumbersCalculator {
     private var currentMaxOrder = 0
     
     private func calculate(n: Int) -> Int {
-        sleep(1)
         if let lastSimple = simpleNumbers.last {
             var currentNumber = lastSimple + 1
             while !isSimple(number: currentNumber) {
