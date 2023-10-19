@@ -7,22 +7,22 @@
 
 import Foundation
 
-class SimpleNumbersPresenter: ISimpleNumbersViewOut, ISimpleNumbersInterOut {
-    private let interactor: ISimpleNumbersInteractor
-    public weak var view: ISimpleNumbersView?
+class NumbersPresenter: INumbersViewOut, INumbersInterOut {
+    private let interactor: INumbersInteractor
+    public weak var view: INumbersView?
     
-    init(interactor: ISimpleNumbersInteractor) {
+    init(interactor: INumbersInteractor) {
         self.interactor = interactor
     }
     
     func cellDidLoad(for indexPath: IndexPath) {
-        interactor.calculateSimpleNumber(for: indexPath.row + 1)
+        interactor.calculateNumber(for: indexPath.row + 1 )
     }
     
     func handleCalculationResult(result: Int, order: Int) {
         let indexPath = IndexPath(row: order-1, section: 0)
         DispatchQueue.main.async {
-            self.view?.showSimpleNumber(number: result, for: indexPath)
+            self.view?.showSimpleNumber(number: result, for: indexPath, overflow: (result==0))
         }
     }
 }

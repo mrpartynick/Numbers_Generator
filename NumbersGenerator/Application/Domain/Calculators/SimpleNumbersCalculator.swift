@@ -37,7 +37,7 @@ class SimpleNumbersCalculator {
     }
 }
 
-extension SimpleNumbersCalculator: ISimpleNumbersCalculator {
+extension SimpleNumbersCalculator: ICalculator {
     func calculate(by order: Int, completion: @escaping (Int) -> ()) {
         if order > currentMaxOrder {
             
