@@ -60,7 +60,6 @@ extension BaseNumbersController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NumberCell.id, for: indexPath) as! NumberCell
-        cell.showedNumber = indexPath.row
         cell.backgroundColor = .blue
         cell.configureBackground(for: indexPath)
         return cell

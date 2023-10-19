@@ -19,6 +19,7 @@ class StatableCell: UICollectionViewCell {
         }
     }
     
+    
     @objc internal dynamic func loadingDidBegin() {
         
     }

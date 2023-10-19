@@ -28,6 +28,8 @@ class NumberCell: StatableCell {
         return l
     }()
     
+    private let spinner = UIActivityIndicatorView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupHierarchy()
@@ -40,6 +42,7 @@ class NumberCell: StatableCell {
     }
     
     private func setupHierarchy() {
+        contentView.addSubview(spinner)
         contentView.addSubview(numberLabel)
     }
     
@@ -49,6 +52,8 @@ class NumberCell: StatableCell {
         numberLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         numberLabel.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor).isActive = true
         numberLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor).isActive = true
+        
+        spinner.frame = contentView.frame
     }
     
     public func configureBackground(for indexPath: IndexPath) {
@@ -64,10 +69,14 @@ class NumberCell: StatableCell {
 //MARK: - loading state functions
 extension NumberCell {
     override func loadingDidBegin() {
-        
+        numberLabel.isHidden = true
+        spinner.startAnimating()
+        spinner.isHidden = false
     }
     
     override func loadingDidEnd() {
-        
+        numberLabel.isHidden = false
+        spinner.stopAnimating()
+        spinner.isHidden = true
     }
 }
